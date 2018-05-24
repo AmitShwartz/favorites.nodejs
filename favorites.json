@@ -1,0 +1,41 @@
+{
+	"users": [
+		{
+		"user_id":1,
+		"user_name":"Amit Shwartz",
+		"favorites": [
+				{
+				"name":"The Girl with the Dragon Tattoo",
+				"author":"Stieg Larsson",
+				"genre":"Thriller",
+				"published":"August 2005"
+				},
+				{
+				"name":"The Lord of the Rings: The Fellowship of the Ring",
+				"author":"J. R. R. Tolkien",
+				"genre":"Adventure",
+				"published":"July 1954"
+				}
+			]
+		},
+		{
+		"user_id":2,
+		"user_name":"Roni Polizanov",
+		"favorites": [
+				{
+				"name":"The Little Prince",
+				"author":"Antoine de Saint-Exupéry",
+				"genre":"Children's Literature",
+				"published":"April 1943"
+				},
+				{
+				"name":"The Lord of the Rings: The Fellowship of the Ring",
+				"author":"J. R. R. Tolkien",
+				"genre":"Adventure",
+				"published":"July 1954"
+				}
+			]
+		}
+
+	]
+}

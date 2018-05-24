@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Favorites API</title>
+		<link rel="stylesheet" href="includes/style.css">
+		 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	</head>
+	<body>
+		<header><h1 id="white">Favorites API</h1></header>
+		<div class="container">
+			<div class="row mt-3">
+				<div class="col-6">
+					<h3 id="blue">getAllUsers()[GET]</h3>
+					<p>Returns embedded json of all users.
+						<br><br><b>query format:</b><br> https://favorites-api.herokuapp.com/getAllUsers</p>
+				</div>
+				<div class="col-6">
+					<h3 id="blue">user_favorite_genre(user_id, genre)[GET|POST|PUT]</h3>
+					<p>Returns json of favorite books from<br>spcific user id by ganre.
+						<br><br><b>query format:</b><br>
+						 https://favorites-api.herokuapp.com/user_favorite_genre/user_id/genre
+					</p>
+				</div>
+			</div>
+				<div class="row mt-3">
+				<div class="col-6">
+					<h3 id="blue">getFavoritesById(user_id)[POST]</h3>
+					<p>Returns json of user by id.
+						<br><br><b>query format:</b><br>https://favorites-api.herokuapp.com/getFavoritesById/</p>
+				</div>
+				<div class="col-6">
+					<h3 id="blue">favorites.json format</h3>
+					<p>{<br>
+						&emsp;"users": [<br>
+						&emsp;&emsp;{<br>
+							&emsp;&emsp;&emsp;"user_id":1,<br>
+							&emsp;&emsp;&emsp;"user_name":"Amit Shwartz",<br>
+							&emsp;&emsp;&emsp;"favorites": [<br>
+							&emsp;&emsp;&emsp;&emsp;{<br>
+								&emsp;&emsp;&emsp;&emsp;"name":"The Girl with the Dragon Tattoo",<br>
+								&emsp;&emsp;&emsp;&emsp;"author":"Stieg Larsson",<br>
+								&emsp;&emsp;&emsp;&emsp;"genre":"Thriller",<br>
+								&emsp;&emsp;&emsp;&emsp;"published":"August 2005"<br>
+								&emsp;&emsp;&emsp;&emsp;	}<br>
+									&emsp;&emsp;&emsp;]<br>
+									&emsp;&emsp;}<br>
+									&emsp;]<br>
+									}</p>
+				</div>
+			</div>
+		</div>
+		<footer><p>&copy Amit Shwartz</p></footer>
+	</body>
+</html>
